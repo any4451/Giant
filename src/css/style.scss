@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/btn.scss';
+@import './components/advantages.scss';
+@import './components/info.scss';
+@import './components/checkmark.scss';
+@import './components/screenshots.scss';
+@import './components/cards.scss';
+@import './components/video.scss';
+@import './components/reviews.scss';
+@import './components/triangles.scss';
+@import './components/slider-btn.scss';
+@import './components/download.scss';
+@import './components/footer.scss';
+@import './components/burger.scss';
+
+@import './media.scss';
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+div {
+margin: 0;
+padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    font-size: 14px;
+    background: #fff;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.2;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    &.overflow {
+        overflow: hidden;
+    }
+    @include phones {
+        font-size: 4vmin;
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1145px;
+    width: 95%;
+    position: relative;
+}
+.container-xl {
+    margin: 0 auto;
+    max-width: 1320px;
+    width: 93%;
+    position: relative;
+}
+button {
+    outline: transparent;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: transparent;
+}
+ul li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    font-size: 54px;
+   @include phones {
+       font-size: 42px;
+   }
+}
+h2 {
+    font-size: 36px;
+    color: #222;
+    @include phones {
+        font-size: 34px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    @include phones {
+        font-size: 22px;
+    }
+}
+
+.section__header {
+    margin: 0 auto 80px;
+    text-align: center;
+    width: 50%;
+    @include tablets {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+    @include phones {
+        width: 95%;
+    }
+}
+.section__title {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,31 @@
+.checkmark {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background: #fff;
+    position: relative;
+    &--white {
+        &::before {
+            border-right: 2px solid #f88e11;
+            border-bottom: 2px solid #f88e11;
+        }
+    }
+    &--black {
+        background: #222;
+        &:before {
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: 36%;
+        transform: rotate(45deg);
+        width: 5px;
+        height: 7px;
+    }
+}

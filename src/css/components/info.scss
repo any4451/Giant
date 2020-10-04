@@ -1,0 +1,59 @@
+@import './../media.scss';
+
+.info {
+    min-height: 710px;
+    height: 100%;
+    display: flex;
+}
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &:before {
+        position: absolute;
+        content: url(./img/iPhone.png);
+        max-width: 362px;
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        @include tablets {
+            right: 125%;
+        }
+        @include phones {
+            display: none;
+        }
+    }
+}
+.info__content {
+    position: relative;
+    width: 45%;
+    @include tablets {
+        width: 68%;
+    }
+    @include phones {
+        width: 95%;
+    }
+}
+.info__title {
+    margin-bottom: 20px;
+}
+.info__text {
+    margin-bottom: 80px;
+    &:last-child {
+        margin-bottom: 35px;
+    }
+    @include phones {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 35px;
+        }
+    }
+}
+.info__item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

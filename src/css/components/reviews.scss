@@ -1,0 +1,60 @@
+@import './../media.scss';
+
+.reviews {
+    margin-bottom: 120px;
+    @include tablets {
+        margin-bottom: 80px;
+    }
+}
+.review-slider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.slick-list {
+    padding: 20px 0px;
+}
+.slick-slide  {
+    background-color: #f7fafc;
+    margin: 0 15px;
+    padding: 40px;
+    @include tablets {
+        padding: 30px;
+        margin: 0 10px;
+    }
+   
+    &.slick-current + div{
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        @include phones {
+            box-shadow: none;
+            background-color: #f7fafc;
+        }
+    }
+}
+
+.review__text {
+    margin-bottom: 30px;
+}
+.user {
+    display: flex;
+    align-items: center;
+
+}
+.user__pic {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius:100%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.user__img {
+    object-fit: contain;
+}
+.user__name {
+    font-family: 'Dosis';
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 11px;
+}

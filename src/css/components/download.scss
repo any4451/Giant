@@ -1,0 +1,68 @@
+@import './../media.scss';
+
+.download {
+    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    min-height: 470px;
+    display: flex;
+}
+.download-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.download__title {
+    color: #fff;
+    margin-bottom: 80px;
+    @include phones {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+}
+.download__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include phones {
+        flex-direction: column;
+    }
+}
+.download__item {
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    width: calc(100%/3 - 30px);
+    @include phones {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+.download__link {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.download__pic {
+    min-height: 80px;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    background-color: #f7fafc;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.download__name {
+    color: #222222;
+    font-family: "Dosis";
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.download__desc {
+    color: #777;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 300;
+}

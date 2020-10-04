@@ -1,0 +1,40 @@
+@import './../media.scss';
+
+.video {
+    margin-bottom: 120px;
+    min-height: 400px;
+    background: url(./img/video_bg.jpg)  center center /cover no-repeat;
+    position: relative;
+    @include phones {
+        margin-bottom: 80px;
+    }
+    
+}
+.video__bg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color: #000000, $alpha: .7);
+}
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: none;
+    background-color: #333333;
+    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    &:before {
+        position: absolute;
+        content:url(./img/play_Icon.png);
+        left:50%;
+        top: 50%;
+        transform: translate(-40%, -45%);
+    }
+}

@@ -1,0 +1,74 @@
+@import './../media.scss';
+
+.hero {
+    background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    color: #fff;
+    min-height: 800px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 115px;
+    overflow: hidden;
+    @include phones {
+        min-height: 600px;
+    }
+    @include phones {
+        margin-bottom: 80px;
+    }
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    &:before {
+        content: url(./img/iPhones.png);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40%;
+        @include tablets {
+            content: url(./img/iPhones.png);
+            bottom: 0;
+            right: -65%;
+            transform: translateY(0);
+        }
+        @include phones {
+            display: none;
+        }
+      }
+}
+.banner {
+    width: 45%;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+        width: 100%;
+    }
+}
+.banner__title {
+    margin-bottom: 20px;
+}
+.banner__text {
+    margin-bottom: 24px;
+}
+.banner__list {
+    margin-bottom: 30px;
+}
+.banner__item {
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.banner__btn {
+    @include phones {
+        text-align: center;
+    }
+}

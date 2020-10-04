@@ -1,0 +1,44 @@
+@import './../media.scss';
+
+.advantages-container {
+    border-bottom: 2px solid #eee;
+}
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    @include phones {
+        margin-bottom: 40px;
+    }
+}
+.advantage {
+    display: flex;
+    width: calc(100%/3 - 40px);
+    margin-bottom: 50px;
+    @include tablets {
+        width: calc(100%/2 - 30px);
+    }
+    @include phones {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+}
+.advantage__title {
+    color: #222;
+    margin-bottom: 20px;
+}
+.advantage__icon {
+    min-width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    @include tablets {
+        min-width: 60px;
+        height: 60px;
+    }
+}

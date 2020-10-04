@@ -1,0 +1,20 @@
+@import './../media.scss';
+
+.screenshots {
+    background-color: #f7fafc;
+    padding: 120px 0;
+    margin-bottom: 118px;
+    @include phones {
+        margin-bottom: 80px;
+        padding: 100px 0;
+    }
+}
+.slider {
+    height: 500px;
+    display: relative;
+    overflow: hidden;
+
+}
+.slider__item {
+    cursor: pointer;
+}

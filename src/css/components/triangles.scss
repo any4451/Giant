@@ -1,0 +1,22 @@
+
+.triangles {
+    position: relative;
+    height: 40px;
+  }
+  .triangles-shape {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    fill: #fff;
+    transform: rotate(180deg);
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 1px;
+    }
+  }
+  
